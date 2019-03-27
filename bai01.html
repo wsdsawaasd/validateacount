@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function Check(str) {
+        let RegEx = /^[_a-z0-9]{6,}$/;
+        if (RegEx.test(str)){
+            return true;
+        }else{
+            return  false;
+        }
+    }
+    let str1 = "123abc_";
+    let str2 = '_abc123';
+    let str3 = '______';
+    let str4 = '123456';
+    let str5 = 'abcdefg';
+    let str6 = '.@';
+    let str7 = '12345';
+    let str8 = '1234_';
+    let str9 = 'abcde';
+    console.log(Check(str1));
+    console.log(Check(str2));
+    console.log(Check(str3));
+    console.log(Check(str4));
+    console.log(Check(str5));
+    console.log(Check(str6));
+    console.log(Check(str7));
+    console.log(Check(str8));
+    console.log(Check(str9));
+</script>
+
+</body>
+</html>
